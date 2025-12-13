@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+            .parent{
+                display: grid;
+                grid-template-columns: 2fr ,5fr;
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-areas: "header header"
+                                    "sidebar content"
+                                    "contacts content"
+                                    "footer footer";
+                gap: 10px;
+                /*border: 5px solid black;*/
+                height: 900px;
+            }
+            .content{
+                grid-area: content;
+                background-color: lightblue;
+                padding: 20px;
+                border: 5px solid black;
+                text-align: center;
+                font-size: 130px;
+                color: aliceblue;
+            }
+            .sidebar{
+                grid-area: sidebar;
+                background: lightcoral;
+                padding: 20px;
+                border: 5px solid black;
+                text-align: center;
+                font-size: 130px;
+                color: aliceblue;
+            }
+            .header{
+                grid-area: header;
+                background: lightgreen;
+                padding: 20px;
+                border: 5px solid black;
+                text-align: center;
+                font-size: 130px;
+                color: aliceblue;
+            }
+            .footer{
+                grid-area: footer;
+                background-color: lightseagreen;
+                padding: 20px;
+                border: 5px solid black;
+                text-align: center;
+                font-size: 130px;
+                color: aliceblue;
+            }
+            .contacts{
+                grid-area: contacts;
+                background-color: rgb(202, 202, 87);
+                padding: 20px;
+                border: 5px solid black;
+                text-align: center;
+                font-size: 130px;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="sidebar">Сайдбар</div>
+            <div class="content">Контент</div>
+            <div class="header">Хедер</div>
+            <div class="footer">Вывод</div>
+            <div class="contacts">Контакты</div>
+        </div>
+    </body>
+</html>
+
